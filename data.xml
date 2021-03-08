@@ -1,0 +1,19 @@
+<root>
+    <note>
+        <to>Abd</to>
+        <from>Jan</from>
+        <heading>Reminder</heading>
+        <body>Don't forget me this weekend!</body>
+    </note>
+    <bibliography>
+        <book id="x2223">
+            <author>
+                <firstname>David</firstname>
+                <lastname>Lodge</lastname>
+            </author>
+            <title>Small world</title>
+            <publisher>Penguin Books</publisher>
+            <year>1995</year>
+        </book>
+    </bibliography>
+</root>
