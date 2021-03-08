@@ -1,4 +1,4 @@
-# # XML Lab Exercises
+# XML Lab Exercises
 Lab XML, DTD, XML Schema
 DTD
 
@@ -15,7 +15,7 @@ Write a DTD representing this data model.
 
 Validate your XML database against your DTD. Once it validates, make some tests, e.g. adding an unexpected element or attribute in your XML file and observe that it does not validate any more
 
-# Curriculum vitae
+# Curriculum Vitae
 The DTD in the cv.dtd file describes a common format for CVs.
 
 Write your CV in XML respecting this DTD (and validate it).
@@ -36,7 +36,7 @@ Write an XML schema for your CVs and for the database of films. It must express 
 Create a copy of films/xml, remove the duplication of information about artists in the ROLE elements, create an attribute to refer to ARTISTE elements within FILM elements. Then write the schema of this new XML file, adding a key and keyref declaration.
 
 
-# XML namespaces
+# XML Namespaces
 * Your previous experience with XML files were without namespace
 * Write new versions with a named namespace
 * Write new versionswith a default namespace
