@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE films [
+        <!ELEMENT films (film*)>
+        <!ELEMENT film (actor, title)>
+        <!ELEMENT actor (#PCDATA)>
+        <!ELEMENT title (#PCDATA)>
+]>
+<films>
+    <film>
+        <actor>votre nom</actor>
+        <title>Avatar</title>
+    </film>
+    <film>
+        <actor>votre nom</actor>
+        <title>Avatar2</title>
+    </film>
+</films>
