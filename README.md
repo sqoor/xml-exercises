@@ -1,6 +1,8 @@
-# # xml-exercises
+# # XML Lab Exercises
 Lab XML, DTD, XML Schema
 DTD
+
+
 # List of films
 We consider that:
 
