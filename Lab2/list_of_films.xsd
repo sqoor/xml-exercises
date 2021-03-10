@@ -1,13 +1,17 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="FILMS" type="filmsType">
-        <xs:key name="pNumKey">
+        <xs:keyref name="keyrefforroles" refer="keyforartist">
             <xs:selector xpath="FILM/ROLES/ROLE"/>
             <xs:field xpath="@artist"/>
-        </xs:key>
-        <xs:keyref name="dummy2" refer="pNumKey">
-            <xs:selector xpath="FILMS/ARTISTE"/>
-            <xs:field xpath="@id"/>
         </xs:keyref>
+        <xs:keyref name="keyreffordirectors" refer="keyforartist">
+            <xs:selector xpath="FILM/MES"/>
+            <xs:field xpath="@idref"/>
+        </xs:keyref>
+        <xs:key name="keyforartist" >
+            <xs:selector xpath="ARTISTE"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
     </xs:element>
 
     <xs:complexType name='filmsType'>

@@ -83,6 +83,11 @@
         <ACTPNOM>Sigourney</ACTPNOM>
         <ANNEENAISS />
     </ARTISTE>
+    <ARTISTE id="a6">
+        <ACTNOM>Weaver</ACTNOM>
+        <ACTPNOM>Sigourney</ACTPNOM>
+        <ANNEENAISS />
+    </ARTISTE>
     <ARTISTE id="a8">
         <ACTNOM>Winslett</ACTNOM>
         <ACTPNOM>Kate</ACTPNOM>
