@@ -8,10 +8,14 @@
                 <title>Year and titles of films in HTML</title>
             </head>
             <body>
-                <h1>Here is the list of the 48 films</h1>
+                <h1>
+                    Here is the list of the
+                    <xsl:value-of select="count(//FILM)" />
+                    films
+                </h1>
                 <blockquote>
                     <xsl:apply-templates select="FILMS/FILM">
-                        <xsl:sort select="@Annee" order="descending"/>
+                        <xsl:sort select="@Annee" order="descending" />
                     </xsl:apply-templates>
                 </blockquote>
             </body>
@@ -40,6 +44,5 @@
         </xsl:if>
     </xsl:template>
 
-    <!-- artsit do not do anything s -->
 
 </xsl:stylesheet>
