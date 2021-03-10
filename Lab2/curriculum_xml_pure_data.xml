@@ -1,0 +1,48 @@
+<cv xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="curriculum_xml_shcema.xsd">
+    <titre>Data Engineer</titre>
+    <cvnom>Abdullah Daqdoqa</cvnom>
+    <etatcivil>
+        <nom>Daqdoqa</nom>
+        <prenom>Abdullah</prenom>
+        <naissance>1993-06-30</naissance>
+        <situation>Single</situation>
+        <adresse>Nice, France</adresse>
+        <code_postal>6560</code_postal>
+        <ville>Vallbonne</ville>
+        <pays>France</pays>
+        <telephone>0749585804</telephone>
+        <email>abdullah.daqdoqa@gmail.com</email>
+        <!-- characterestics (optinal) -->
+        <caracteristiques >
+            <!-- attlist type CDATA  required-->
+            <caracteristique type="Personal">Pas tres intelligent</caracteristique>
+            <caracteristique type="Personal">paresseux</caracteristique>
+        </caracteristiques >
+    </etatcivil>
+    <formations>
+        <formation 
+            date-iso="date" 
+            date="2021" 
+            intitule="IDK" 
+            description="some random description" 
+        />
+    </formations>
+    <connaissances>
+        <technique type="1" nom="IDK" />
+        <technique type="1" nom="IDK" description="description" />
+        <langue nom="Arabic" niveau="Native" />
+        <langue nom="English" niveau="Intermidate" />
+        <langue nom="French" niveau="beginner" />
+    </connaissances>
+    <professionnel>
+        <experience date-iso="xs:date" date="2019-09-24" datefin="2020-10-27" entreprise="Mawdoo3" fonction="Software Engineer">
+            <missions>
+                <mission>1: I do now know what to say</mission>
+                <mission>2: I do now know what to say</mission>
+            </missions>
+            <environnement>
+                <technique type="1" nom="PHP" />
+            </environnement>
+        </experience>
+    </professionnel>
+</cv>

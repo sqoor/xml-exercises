@@ -1,0 +1,127 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cv" type="cvType"/>
+
+    <xs:complexType name='cvType'>
+        <xs:sequence>
+            <xs:element name='titre' type='xs:string'/>
+            <xs:element name='cvnom' type='xs:string'/>
+            <xs:element name='etatcivil' type='etatcivilType'/> 
+            <xs:element name='formations' type='formationsType'/>
+            <xs:element name='connaissances' type='connaissancesType'/> <!-- here-->
+            <xs:element name='professionnel' type='professionnelType'/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="etatcivilType">
+        <xs:sequence>
+            <xs:element name='nom' type='xs:string'/>
+            <xs:element name='prenom' type='xs:string'/>
+            <xs:element name='naissance' type='xs:date'/>
+            <xs:element name='situation' type='xs:string'/>
+            <xs:element name='adresse' type='xs:string' minOccurs="0" maxOccurs="1"/>
+            <xs:element name='code_postal' type='xs:integer' minOccurs="0" maxOccurs="1" />
+            <xs:element name='ville' type='xs:string' minOccurs="0" maxOccurs="1"/>
+            <xs:element name='pays' type='xs:string' minOccurs="0" maxOccurs="1"/>
+            <xs:element name='telephone' type='xs:integer' minOccurs="0" maxOccurs="1"/>
+            <xs:element name='email' type='xs:string' minOccurs="0" maxOccurs="1"/>
+            <xs:element name='caracteristiques' type='caracteristiquesType' minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="caracteristiquesType">
+        <xs:sequence>
+             <!-- TODO: caracteristique need to be one or more occurence !! -->
+            <xs:element name="caracteristique" type="caracteristiqueType" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="caracteristiqueType">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" type="xs:string" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="formationsType">
+        <xs:sequence>
+            <xs:element name="formation" type="formationType" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>  
+    </xs:complexType>
+
+    <xs:complexType name="formationType">
+        <xs:attribute name="date-iso" type="xs:string" use="required"/>
+        <xs:attribute name="date" type="xs:gYear" use="required" /> <!-- here date string-->
+        <xs:attribute name="datefin" type="xs:date" />
+        <xs:attribute name="intitule" type="xs:string" use="required" />
+        <xs:attribute name="description" type="xs:string" />
+    </xs:complexType>
+
+    <xs:complexType name="connaissancesType">
+        <xs:sequence>
+            <xs:element name="technique" type="techniqueType" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="langue" type="langueType" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>  
+    </xs:complexType>
+
+    <xs:complexType name="techniqueType">
+        <xs:attribute name="type" type="techniqueTypeAttrType" use="required" /> <!--  1 to 5 values -->
+        <xs:attribute name="nom" type="xs:string"  use="required" />
+        <xs:attribute name="description" type="xs:string" />
+    </xs:complexType>
+
+    <xs:simpleType name="techniqueTypeAttrType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="langueType">
+        <xs:attribute name="nom" type="xs:string" use="required" />
+        <xs:attribute name="niveau" type="xs:string"  use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="professionnelType">
+        <xs:sequence>
+            <xs:element name="experience" type="experienceType" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>  
+    </xs:complexType>
+
+    <xs:complexType name="experienceType">
+        <xs:sequence>
+            <xs:element name="missions" type="missionsType" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="environnement" type="environnementType" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="date-iso" type="xs:string" use="required" />
+        <xs:attribute name="date" type="xs:date"  use="required" />
+        <xs:attribute name="datefin" type="xs:date" />
+        <xs:attribute name="client" type="xs:string" />
+        <xs:attribute name="entreprise" type="xs:string"  use="required" />
+        <xs:attribute name="fonction" type="xs:string"  use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="missionsType">
+        <xs:sequence>
+            <xs:element name="mission" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>  
+    </xs:complexType>
+
+    <xs:complexType name="environnementType">
+        <xs:sequence>
+            <xs:element name="technique" type="techniqueType" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>  
+    </xs:complexType>
+
+    <xs:complexType name="personnelType">
+        <xs:sequence>
+            <xs:element name="activite" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="environnement" type="environnementType" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="type" type="xs:string" use="required" />
+        <xs:attribute name="nom" type="xs:string" use="required" />
+        <xs:attribute name="description" type="xs:string" />
+    </xs:complexType>
+
+    
+</xs:schema> 

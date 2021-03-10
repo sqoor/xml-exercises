@@ -1,0 +1,57 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="FILMS" type="filmsType">
+        <xs:key name="pNumKey">
+            <xs:selector xpath="FILM/ROLES/ROLE"/>
+            <xs:field xpath="@artist"/>
+        </xs:key>
+        <xs:keyref name="dummy2" refer="pNumKey">
+            <xs:selector xpath="FILMS/ARTISTE"/>
+            <xs:field xpath="@id"/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:complexType name='filmsType'>
+        <xs:sequence>
+            <xs:element name='FILM' type='filmType' minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name='ARTISTE' type='artisteType' minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name='filmType'>
+        <xs:sequence>
+            <xs:element name='TITRE' type='xs:string' />
+            <xs:element name='GENRE' type='xs:string' />
+            <xs:element name='PAYS' type='xs:string' />
+            <xs:element name='MES' type='mesType' />
+            <xs:element name='ROLES' type='rolesType' />
+            <xs:element name='RESUME' type='xs:string' minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="Annee" type="xs:gYear" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="mesType">
+        <xs:attribute name="idref" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name="rolesType">
+        <xs:sequence>
+            <xs:element name="ROLE" type="roleType" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="roleType">
+        <xs:sequence>
+            <xs:element name="INTITULE" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="artist" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <xs:complexType name='artisteType'>
+        <xs:sequence>
+            <xs:element name="ACTNOM" type="xs:string" />
+            <xs:element name="ACTPNOM" type="xs:string" />
+            <xs:element name="ANNEENAISS" type="xs:string" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required" />
+    </xs:complexType>
+</xs:schema>

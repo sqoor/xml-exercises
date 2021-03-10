@@ -1,0 +1,106 @@
+<FILMS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./list_of_films.xsd">
+    <FILM Annee="1958">
+        <TITRE>Vertigo</TITRE>
+        <GENRE>Drame</GENRE>
+        <PAYS>USA</PAYS>
+        <MES idref="a3" />
+        <ROLES>
+            <ROLE artist="a11">
+                <INTITULE>John Ferguson</INTITULE>
+            </ROLE>
+            <ROLE artist="a10">
+                <INTITULE>Madeleine Elster</INTITULE>
+            </ROLE>
+        </ROLES>
+        <RESUME>Scottie Ferguson, ancien inspecteur de police, est sujet au vertige depuis qu'il a vu mourir son collègue. Elster, son ami, le charge de surveiller sa femme, Madeleine, ayant des tendances suicidaires. Amoureux de la jeune femme Scottie ne remarque pas le piège qui se trame autour de lui et dont il va être la victime...</RESUME>
+    </FILM>
+    <FILM Annee="1979">
+        <TITRE>Alien</TITRE>
+        <GENRE>Science-fiction</GENRE>
+        <PAYS>USA</PAYS>
+        <MES idref="a4" />
+        <ROLES>
+            <ROLE artist="a6">
+                <INTITULE>Ripley</INTITULE>
+            </ROLE>
+        </ROLES>
+        <RESUME>Près d'un vaisseau spatial échoué sur une lointaine planète, des Terriens en mission découvrent de bien étranges "oeufs". Ils en ramènent un à bord, ignorant qu'ils viennent d'introduire parmi eux un huitième passager particulièrement féroce et meurtrier.</RESUME>
+    </FILM>
+    <FILM Annee="1997">
+        <TITRE>Titanic</TITRE>
+        <GENRE>Drame</GENRE>
+        <PAYS>USA</PAYS>
+        <MES idref="a6" />
+        <ROLES>
+            <ROLE artist="a8">
+                <INTITULE>Rose DeWitt Bukater</INTITULE>
+            </ROLE>
+            <ROLE artist="a9">
+                <INTITULE>Jack Dawson</INTITULE>
+            </ROLE>
+        </ROLES>
+        <RESUME>Conduite par Brock Lovett, une expédition américaine fouillant l'épave du Titanic remonte à la surface le croquis d'une femme nue. Alertée par les médias la dame en question, Rose DeWitt Bukater, aujourd'hui centenaire, rejoint les lieux du naufrage, d'où elle entreprend de conter le récit de son fascinant, étrange et tragique voyage...</RESUME>
+    </FILM>
+    <FILM Annee="1986">
+        <TITRE>Sacrifice</TITRE>
+        <GENRE>Drame</GENRE>
+        <PAYS>FR</PAYS>
+        <MES idref="a9" />
+        <ROLES />
+    </FILM>
+    <FILM Annee="1997">
+        <TITRE>Volte/Face</TITRE>
+        <GENRE>Action</GENRE>
+        <PAYS>USA</PAYS>
+        <MES idref="a10" />
+        <ROLES>
+            <ROLE artist="a4">
+                <INTITULE>Sean Archer/Castor Troy</INTITULE>
+            </ROLE>
+            <ROLE artist="a3">
+                <INTITULE>Castor Troy/Sean Archer</INTITULE>
+            </ROLE>
+        </ROLES>
+        <RESUME>Directeur d'une unité anti-terroriste, Sean Archer recherche Castor Troy, un criminel responsable de la mort de son fils six ans plus tôt. Il parvient à l'arrêter mais apprend que Troy a caché une bombe au Palais des Congrès de Los Angeles. Seul le frère de Troy peut la désamorcer et, pour l'approcher, Archer se fait greffer le visage de Troy.</RESUME>
+    </FILM>
+    <ARTISTE id="a2">
+        <ACTNOM>Cameron</ACTNOM>
+        <ACTPNOM>James</ACTPNOM>
+        <ANNEENAISS>1954</ANNEENAISS>
+    </ARTISTE>
+    <ARTISTE id="a3">
+        <ACTNOM>Hitchcock</ACTNOM>
+        <ACTPNOM>Alfred</ACTPNOM>
+        <ANNEENAISS>1899</ANNEENAISS>
+    </ARTISTE>
+    <ARTISTE id="a4">
+        <ACTNOM>Scott</ACTNOM>
+        <ACTPNOM>Ridley</ACTPNOM>
+        <ANNEENAISS>1937</ANNEENAISS>
+    </ARTISTE>
+    <ARTISTE id="a5">
+        <ACTNOM>Weaver</ACTNOM>
+        <ACTPNOM>Sigourney</ACTPNOM>
+        <ANNEENAISS />
+    </ARTISTE>
+    <ARTISTE id="a8">
+        <ACTNOM>Winslett</ACTNOM>
+        <ACTPNOM>Kate</ACTPNOM>
+        <ANNEENAISS />
+    </ARTISTE>
+    <ARTISTE id="a9">
+        <ACTNOM>Tarkovski</ACTNOM>
+        <ACTPNOM>Andrei</ACTPNOM>
+        <ANNEENAISS>1932</ANNEENAISS>
+    </ARTISTE>
+    <ARTISTE id="a10">
+        <ACTNOM>Woo</ACTNOM>
+        <ACTPNOM>John</ACTPNOM>
+        <ANNEENAISS>1946</ANNEENAISS>
+    </ARTISTE>
+    <ARTISTE id="a11">
+        <ACTNOM>Woo</ACTNOM>
+        <ACTPNOM>John</ACTPNOM>
+        <ANNEENAISS>1946</ANNEENAISS>
+    </ARTISTE>
+</FILMS>
