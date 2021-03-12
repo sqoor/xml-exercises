@@ -62,3 +62,14 @@ Consider the XML document in cd_catalog.xml and write XSLT transformations to ou
 * Write a transformation that copies an XML tree while replacing all the attributes of an element by child elements, each having for name the name of the original attribute.
 * Write a transformation that copies an XML tree while conserving only the three first levels of the tree.
 * Write a transformation that copies an XML tree while conserving only the three first levels of the tree, and the elements of the third level without text content or without child elements are skipped.
+
+
+
+
+# # Lab 4
+
+# JSON Lab
+* Consider the example data structured in XML in films.xml (or a subset of it for let us say 5 films and their associated artists) and express it in JSON.
+* Write a JSON schema for your JSON data and experience validating your data against its schema using an online validator or a validator available in your editor or programming environment.
+
+

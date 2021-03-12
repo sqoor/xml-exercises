@@ -1,0 +1,114 @@
+{
+  "FILMS": [
+    {
+      "Annee": 1958,
+      "TITRE": "Vertigo",
+      "GENRE": "Drame",
+      "PAYS": "USA",
+      "MES": {
+        "idref": "a3"
+      },
+      "ROLES": [
+        {
+          "PERNOM": "James",
+          "NOM": "Stwart",
+          "INTITULE": "Jhon Ferguson"
+        },
+        {
+          "PERNOM": "Kim",
+          "NOM": "Novak",
+          "INTITULE": "Maeleine Elster"
+        }
+      ],
+      "RESUME": "Scottie Ferguson, ancien inspecteur de police, est sujet au vertige depuis qu'il a vu mourir son coll�gue. Elster, son ami, le charge de surveiller sa femme, Madeleine, \n ayant des tendances  Amoureux de la jeune femme Scottie ne remarque pas le pi�ge qui se trame autour de lui et dont il va �tre la victime..."
+    },
+    {
+      "Annee": 1979,
+      "TITRE": "Alien",
+      "GENRE": "Science-fiction",
+      "PAYS": "USA",
+      "MES": {
+        "idref": "a4"
+      },
+      "ROLES": [
+        {
+          "PERNOM": "Sigourney",
+          "NOM": "Weaver",
+          "INTITULE": "Ripley"
+        }
+      ],
+      "RESUME": "Pr�s d'un vaisseau spatial �chou� sur une lointaine plan�te, des Terriens en mission d�couvrent de bien �tranges \"oeufs\". Ils en ram�nent un � bord, ignorant qu'ils viennent d'introduire parmi eux un huiti�me passager particuli�rement f�roce et meurtrier."
+    },
+    {
+        "Annee": 1997,
+        "TITRE": "Titanic",
+        "GENRE": "Drame",
+        "PAYS": "USA",
+        "MES": {
+          "idref": "a6"
+        },
+        "ROLES": [
+          {
+            "PERNOM": "Kate",
+            "NOM": "Winslet",
+            "INTITULE": "Rose DeWitt Bukater"
+          },
+          {
+            "PERNOM": "Leonardo",
+            "NOM": "DiCaprio",
+            "INTITULE": "Jack Dawson"
+          }
+        ],
+        "RESUME": "Conduite par Brock Lovett, une exp�dition am�ricaine fouillant l'�pave du Titanic remonte � la surface le croquis \n d'une femme nue. Alert�e par les m�dias la dame en question, Rose DeWitt Bukater, aujourd'hui centenaire, rejoint les lieux du naufrage, d'o� elle entreprend de conter le r�cit de son fascinant, �trange et tragique voyage..."
+      },
+      {
+          "Annee": 1997,
+          "TITRE": "Volte/Face",
+          "GENRE": "Action",
+          "PAYS": "USA",
+          "MES": {
+            "idref": "a10"
+          },
+          "ROLES": [
+            {
+              "PERNOM": "John",
+              "NOM": "Travolta",
+              "INTITULE": "Sean Archer/Castor Troy"
+            },
+            {
+              "PERNOM": "Nicolas",
+              "NOM": "Cage",
+              "INTITULE": "Castor Troy/Sean Archer"
+            }
+          ],
+          "RESUME": " Directeur d'une unit� anti-terroriste, Sean Archer recherche Castor Troy, un criminel responsable de la mort de son fils six ans plus t�t.\n  Il parvient � l'arr�ter mais apprend que Troy a cach� une bombe au Palais des Congr�s de Los Angeles. Seul le fr�re de Troy peut la d�samorcer et, pour l'approcher, Archer se fait greffer le visage de Troy."
+        },
+        {
+            "Annee": 1999,
+            "TITRE": "Sleepy Hollow",
+            "GENRE": "Fantastique",
+            "PAYS": "USA",
+            "MES": {
+              "idref": "a13"
+            },
+            "ROLES": [
+              {
+                "PERNOM": "John",
+                "NOM": "Depp",
+                "INTITULE": "Constable Ichabod Crane"
+              },
+              {
+                "PERNOM": "Christina",
+                "NOM": "Ricci",
+                "INTITULE": "Katrina Anne Van Tassel"
+              },
+              {
+                "PERNOM": "Christopher",
+                "NOM": "Walken",
+                "INTITULE": "Le cavalier"
+              }
+            ],
+            "RESUME": "Nouvelle Angleterre, 1799. A Sleepy Hollow, plusieurs cadavres sont retrouv�s d�capit�s. La rumeur attribue ces meurtres � un cavalier lui-m�me sans t�te. Mais le fin limier new-yorkais Ichabod Crane ne croit pas en ses aberrations. Tomb� sous le charme de la v�n�neuse Katrina, il m�ne son enqu�te au coeur des sortil�ges de Sleepy Hollow.."
+          }
+  ]
+}
