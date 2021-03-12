@@ -1,40 +1,38 @@
-{
-  "title": "FILMS",
-  "type": "array",
-  "items": {
+{ 
     "type": "object",
     "properties": {
-      "Annee": {
-        "type": "integer"
-      },
-      "TITRE": {
-        "type": "string"
-      },
-      "GENRE": {
-        "type": "string"
-      },
-      "PAYS": {
-        "type": "string"
-      },
-      "MES": {
-        "type": "object",
-        "properties": {
-          "idref": "string"
-        }
-      },
-      "ROLES": [
-        {
-          "type": "object",
-          "properties": {
-            "PERNOM": "string",
-            "NOM": "string",
-            "INTITULE": "string"
+        "FILMS": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "Annee": { "type": "integer" },
+                "TITRE": { "type": "string" },
+                "GENRE": { "type": "string" },
+                "PAYS": { "type": "string" },
+                "MES": {
+                  "type": "object",
+                  "properties": {
+                    "idref": { "type": "string" }
+                  }
+                },
+                "ROLES": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "PERNOM": { "type": "string" },
+                        "NOM": { "type": "string" },
+                        "INTITULE": { "type": "string" }
+                      }
+                    }
+                  ]
+                },
+                "RESUME": { "type": "string" }
+              }
+            }
           }
-        }
-      ],
-      "RESUME": {
-        "type": "string"
-      }
+          
     }
-  }
 }
